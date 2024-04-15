@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="10kg">
+
+<xacro:property name="PI" value="3.1415926535897931"/>
+<xacro:property name="MASS" value="4.437"/> <!--POINT MASS (kg)-->
+<xacro:property name="LOWER_MASS" value="0"/> <!--POINT MASS (kg)-->
+<xacro:property name="NUM_JOINTS" value="6"/> <!-- Number of joints -->
+
+
+<link name="world"/>
+
+<joint name="base" type="fixed">
+    <parent link="world"/>
+    <child link="link0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<!--++++++++++++++++++++ link 0 ++++++++++++++++++++++++++++++-->
+    <link name="link0">
+
+            <!-- +++++++++++ Defining geometric parameters for visualization ${PI/2} ++++++++++ -->
+            <visual>
+                <origin xyz="0 0 0" rpy ="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://svaya_description/meshes/visual/aiu_6_v2_link0.dae"/>
+                </geometry>
+            </visual>
+
+            <!-- +++++++++++ Defining geometric parameters for collision ++++++++++ -->
+            <collision>
+                <origin xyz="0 0 0" rpy ="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://svaya_description/meshes/collision/aiu_6_v2_link0.dae"/>
+                </geometry>
+            </collision>
+
+            <!-- +++++++++++ Defining inertial parameters for link ++++++++++ -->
+            <inertial>
+                <origin xyz="0 2.22e-03 21.13e-03" rpy ="0 0 0"/>
+                <mass value="0.353"/>
+                <inertia ixx="3.3439e-03" iyy="3.0319e-03" izz="3.2406e-03" ixy="-8.9614e-06" iyz="-1.5707e-04" ixz="-3.5015e-06"/>
+            </inertial>
+        </link>
+
+        <!-- ******************************************** Defining joint-1 between link0 and link1 ************************************************ -->
+        <joint name="joint1" type="fixed">
+            <parent link="link0"/>
+            <child link="link1"/>
+            <origin xyz="0.000000 0.000000 0.062000"  rpy="0 0 0"/>
+        </joint>
+
+        <!-- ********************************************************** Defining link 1 ************************************************************* -->
+        <link name="link1">
+
+            <!-- +++++++++++ Defining geometric parameters for visualization ++++++++++ -->
+            <visual>
+                <origin xyz="0 0 0" rpy ="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://svaya_description/meshes/visual/aiu_6_v2_link1.dae"/>
+                </geometry>
+            </visual>
+
+            <!-- +++++++++++ Defining geometric parameters for collision ++++++++++ -->
+            <collision>
+                <origin xyz="0 0 0" rpy ="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://svaya_description/meshes/collision/aiu_6_v2_link1.dae"/>
+                </geometry>
+            </collision>
+
+            <!-- +++++++++++ Defining inertial parameters for link ++++++++++ -->
+            <inertial>
+                <origin xyz="-0.1e-03 -3.62e-03 59.53e-03" rpy ="0 0 0"/>
+                <mass value = "0.1"/>
+                <inertia ixx="1.2495e-02" iyy="9.2143e-03" izz="1.2236e-02" ixy="-2.6130e-06" iyz="-1.0385e-03" ixz="-3.7454e-05"/>
+            </inertial>
+        </link>
+
+        <!-- ******************************************** Defining joint-2 between link1 and link2 ************************************************ -->
+        <joint name="joint2" type="revolute">
+            <parent link="link1"/>
+            <child link="link2"/>
+            <axis xyz="0 0 1"/>
+            <limit effort="157" upper="${0.99*PI}" lower="${-0.99*PI}" velocity="${PI}"/>
+            <origin xyz="0.000000 -0.072760 0.089560"  rpy="0 ${-PI/2} ${-PI/2}"/>
+        </joint>
+
+        <!-- ********************************************************** Defining link 2 ************************************************************* -->
+        <link name="link2">
+
+            <!-- +++++++++++ Defining geometric parameters for visualization ++++++++++ -->
+            <visual>
+                <origin xyz="0 0 0.0" rpy ="${PI/2} 0 ${PI/2}"/>
+                <geometry>
+                    <mesh filename="package://svaya_description/meshes/visual/aiu_6_v2_link2.dae"/>
+                </geometry>
+            </visual>
+
+            <!-- +++++++++++ Defining geometric parameters for collision ++++++++++ -->
+            <collision>
+                <origin xyz="0 0 0.0" rpy ="${PI/2} 0 ${PI/2}"/>
+                <geometry>
+                    <mesh filename="package://svaya_description/meshes/collision/aiu_6_v2_link2.dae"/>
+                </geometry>
+            </collision>
+
+            <!-- +++++++++++ Defining inertial parameters for link ++++++++++ -->
+            <inertial>
+            <origin xyz="${(5.41*0.42 + MASS*0.5 + LOWER_MASS*0.20)/(MASS+ 5.41 + LOWER_MASS)} 0 0" rpy ="0 0 0"/>
+<!--                <origin xyz="0.7 0 0" rpy ="0 0 0"/>-->
+            <mass value = "${5.41 + MASS + LOWER_MASS}"/>
+<!--                <mass value = "5.7"/>-->
+<inertia ixx="0" iyy="0" izz="${MASS*0.5*0.5 + 0.475 + LOWER_MASS*0.20*0.20}" ixy="0" iyz="0" ixz="0"/>
+<!--                <inertia ixx="0" iyy="0" izz="0.9" ixy="0" iyz="0" ixz="0"/>-->
+            </inertial>
+        </link>
+        <ros2_control name="svayaHW" type="system">
+              <hardware>
+                <plugin>svaya_hw/SvayaHW</plugin>
+                <param name = "num_of_joints">${NUM_JOINTS}</param>
+              </hardware>
+          <!--    <xacro:foreach items="1..${NUM_JOINTS}" index="i">
+                   <joint name="joint${i}">
+                     <command_interface name="position"/>
+                     <command_interface name="velocity"/>
+                     <command_interface name="acceleration"/>
+                     <state_interface name="position"/>
+                     <state_interface name="velocity"/>
+                     <state_interface name="acceleration"/>
+                     <state_interface name="effort"/>
+                   </joint>
+                 </xacro:foreach>-->
+
+        <xacro:macro name="loop" params="joint_list:=^">
+                       <xacro:if value="${joint_list}">
+                               <!-- pop first item from list -->
+                               <xacro:property name="jc" value="${joint_list.pop(0)}"/>
+
+                                <joint name="joint${jc}">
+                                  <command_interface name="position"/>
+                                  <command_interface name="velocity"/>
+                                  <command_interface name="acceleration"/>
+                                  <state_interface name="position"/>
+                                  <state_interface name="velocity"/>
+                                  <state_interface name="acceleration"/>
+                                  <state_interface name="effort"/>
+                                </joint>
+
+                               <xacro:loop />
+                       </xacro:if>
+       </xacro:macro>
+
+       <xacro:loop joint_list="${[1,2,3,4,5,6]}"/>
+<!--
+              <joint name="joint1">
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="acceleration"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="acceleration"/>
+                <state_interface name="effort"/>
+              </joint>
+            <joint name="joint2">
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="acceleration"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="acceleration"/>
+                <state_interface name="effort"/>
+              </joint>
+                 <joint name="joint3">
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="acceleration"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="acceleration"/>
+                <state_interface name="effort"/>
+              </joint>
+              <joint name="joint4">
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="acceleration"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="acceleration"/>
+                <state_interface name="effort"/>
+              </joint>
+              <joint name="joint5">
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="acceleration"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="acceleration"/>
+                <state_interface name="effort"/>
+              </joint>
+              <joint name="joint6">
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="acceleration"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="acceleration"/>
+                <state_interface name="effort"/>
+         </joint>-->
+  </ros2_control>
+</robot>

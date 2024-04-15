@@ -1,0 +1,203 @@
+[0.821s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'torq_predictor']
+[0.821s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=10, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['torq_predictor'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f65130ad180>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f6513069690>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f6513069690>>)
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.860s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/svaya/JTS_with_FTS/src'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extensions ['ignore', 'ignore_ament_install']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extension 'ignore'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extension 'ignore_ament_install'
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extensions ['colcon_pkg']
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extension 'colcon_pkg'
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extensions ['colcon_meta']
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extension 'colcon_meta'
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extensions ['ros']
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(embr) by extension 'ros'
+[0.872s] DEBUG:colcon.colcon_core.package_identification:Package 'embr' with type 'ros.ament_cmake' and name 'embr'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extensions ['ignore', 'ignore_ament_install']
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extension 'ignore'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extension 'ignore_ament_install'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extensions ['colcon_pkg']
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extension 'colcon_pkg'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extensions ['colcon_meta']
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extension 'colcon_meta'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extensions ['ros']
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(knexo_ethercat) by extension 'ros'
+[0.873s] DEBUG:colcon.colcon_core.package_identification:Package 'knexo_ethercat' with type 'ros.ament_cmake' and name 'knexo_ethercat'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extensions ['ignore', 'ignore_ament_install']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extension 'ignore'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extension 'ignore_ament_install'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extensions ['colcon_pkg']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extension 'colcon_pkg'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extensions ['colcon_meta']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extension 'colcon_meta'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extensions ['ros']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_control) by extension 'ros'
+[0.874s] DEBUG:colcon.colcon_core.package_identification:Package 'svaya_control' with type 'ros.ament_cmake' and name 'svaya_control'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extensions ['ignore', 'ignore_ament_install']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extension 'ignore'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extension 'ignore_ament_install'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extensions ['colcon_pkg']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extension 'colcon_pkg'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extensions ['colcon_meta']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extension 'colcon_meta'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extensions ['ros']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_description) by extension 'ros'
+[0.875s] DEBUG:colcon.colcon_core.package_identification:Package 'svaya_description' with type 'ros.ament_cmake' and name 'svaya_description'
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extensions ['ignore', 'ignore_ament_install']
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extension 'ignore'
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extension 'ignore_ament_install'
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extensions ['colcon_pkg']
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extension 'colcon_pkg'
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extensions ['colcon_meta']
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extension 'colcon_meta'
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extensions ['ros']
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_hw) by extension 'ros'
+[0.876s] DEBUG:colcon.colcon_core.package_identification:Package 'svaya_hw' with type 'ros.ament_cmake' and name 'svaya_hw'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extensions ['ignore', 'ignore_ament_install']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extension 'ignore'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extension 'ignore_ament_install'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extensions ['colcon_pkg']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extension 'colcon_pkg'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extensions ['colcon_meta']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extension 'colcon_meta'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extensions ['ros']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_joint_state_reader) by extension 'ros'
+[0.877s] DEBUG:colcon.colcon_core.package_identification:Package 'svaya_joint_state_reader' with type 'ros.ament_cmake' and name 'svaya_joint_state_reader'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extensions ['ignore', 'ignore_ament_install']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extension 'ignore'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extension 'ignore_ament_install'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extensions ['colcon_pkg']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extension 'colcon_pkg'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extensions ['colcon_meta']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extension 'colcon_meta'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extensions ['ros']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_testing) by extension 'ros'
+[0.878s] DEBUG:colcon.colcon_core.package_identification:Package 'svaya_testing' with type 'ros.ament_cmake' and name 'svaya_testing'
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extension 'ignore'
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extension 'ignore_ament_install'
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extensions ['colcon_pkg']
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extension 'colcon_pkg'
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extensions ['colcon_meta']
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extension 'colcon_meta'
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extensions ['ros']
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(svaya_trajectory_publisher) by extension 'ros'
+[0.879s] DEBUG:colcon.colcon_core.package_identification:Package 'svaya_trajectory_publisher' with type 'ros.ament_cmake' and name 'svaya_trajectory_publisher'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extensions ['ignore', 'ignore_ament_install']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extension 'ignore'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extension 'ignore_ament_install'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extensions ['colcon_pkg']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extension 'colcon_pkg'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extensions ['colcon_meta']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extension 'colcon_meta'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extensions ['ros']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(torq_predictor) by extension 'ros'
+[0.879s] DEBUG:colcon.colcon_core.package_identification:Package 'torq_predictor' with type 'ros.ament_cmake' and name 'torq_predictor'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extension 'ignore'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extension 'ignore_ament_install'
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extensions ['colcon_pkg']
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extension 'colcon_pkg'
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extensions ['colcon_meta']
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extension 'colcon_meta'
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extensions ['ros']
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(util_nodes) by extension 'ros'
+[0.880s] DEBUG:colcon.colcon_core.package_identification:Package 'util_nodes' with type 'ros.ament_cmake' and name 'util_nodes'
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.881s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'knexo_ethercat' in 'knexo_ethercat'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'svaya_description' in 'svaya_description'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'svaya_joint_state_reader' in 'svaya_joint_state_reader'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'util_nodes' in 'util_nodes'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'embr' in 'embr'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'svaya_hw' in 'svaya_hw'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'svaya_trajectory_publisher' in 'svaya_trajectory_publisher'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'svaya_control' in 'svaya_control'
+[0.949s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'svaya_testing' in 'svaya_testing'
+[0.973s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.973s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.000s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/svaya/ros2_control/install
+[1.013s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 308 installed packages in /opt/ros/humble
+[1.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'cmake_args' from command line to 'None'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'cmake_target' from command line to 'None'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'cmake_clean_first' from command line to 'False'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'cmake_force_configure' from command line to 'False'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'ament_cmake_args' from command line to 'None'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'torq_predictor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.099s] DEBUG:colcon.colcon_core.verb:Building package 'torq_predictor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/svaya/JTS_with_FTS/src/build/torq_predictor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/svaya/JTS_with_FTS/src/install/torq_predictor', 'merge_install': False, 'path': '/home/svaya/JTS_with_FTS/src/torq_predictor', 'symlink_install': False, 'test_result_base': None}
+[1.111s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.124s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.124s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/svaya/JTS_with_FTS/src/torq_predictor' with build type 'ament_cmake'
+[1.124s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/svaya/JTS_with_FTS/src/torq_predictor'
+[1.141s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.141s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.141s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/svaya/JTS_with_FTS/src/build/torq_predictor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/svaya/ros2_control/install/rqt_controller_manager:/home/svaya/ros2_control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/svaya/JTS_with_FTS/src/torq_predictor -DCMAKE_INSTALL_PREFIX=/home/svaya/JTS_with_FTS/src/install/torq_predictor
+[2.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/svaya/JTS_with_FTS/src/build/torq_predictor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/svaya/ros2_control/install/rqt_controller_manager:/home/svaya/ros2_control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/svaya/JTS_with_FTS/src/torq_predictor -DCMAKE_INSTALL_PREFIX=/home/svaya/JTS_with_FTS/src/install/torq_predictor
+[2.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/svaya/JTS_with_FTS/src/build/torq_predictor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/svaya/ros2_control/install/rqt_controller_manager:/home/svaya/ros2_control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/svaya/JTS_with_FTS/src/build/torq_predictor -- -j10 -l10
+[2.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/svaya/JTS_with_FTS/src/build/torq_predictor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/svaya/ros2_control/install/rqt_controller_manager:/home/svaya/ros2_control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/svaya/JTS_with_FTS/src/build/torq_predictor -- -j10 -l10
+[3.009s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(torq_predictor)
+[3.026s] Level 1:colcon.colcon_core.environment:checking '/home/svaya/JTS_with_FTS/src/install/torq_predictor' for CMake module files
+[3.026s] Level 1:colcon.colcon_core.environment:checking '/home/svaya/JTS_with_FTS/src/install/torq_predictor' for CMake config files
+[3.026s] Level 1:colcon.colcon_core.environment:checking '/home/svaya/JTS_with_FTS/src/install/torq_predictor/bin'
+[3.026s] Level 1:colcon.colcon_core.environment:checking '/home/svaya/JTS_with_FTS/src/install/torq_predictor/lib/pkgconfig/torq_predictor.pc'
+[3.027s] Level 1:colcon.colcon_core.environment:checking '/home/svaya/JTS_with_FTS/src/install/torq_predictor/lib/python3.10/site-packages'
+[3.027s] Level 1:colcon.colcon_core.environment:checking '/home/svaya/JTS_with_FTS/src/install/torq_predictor/bin'
+[3.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/package.ps1'
+[3.048s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/package.dsv'
+[3.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/package.sh'
+[3.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/package.bash'
+[3.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/package.zsh'
+[3.051s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/svaya/JTS_with_FTS/src/install/torq_predictor/share/colcon-core/packages/torq_predictor)
+[3.061s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.061s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.061s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[3.061s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.079s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.079s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.079s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.096s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.110s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/svaya/JTS_with_FTS/src/install/local_setup.ps1'
+[3.111s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/svaya/JTS_with_FTS/src/install/_local_setup_util_ps1.py'
+[3.112s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/svaya/JTS_with_FTS/src/install/setup.ps1'
+[3.126s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/svaya/JTS_with_FTS/src/install/local_setup.sh'
+[3.127s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/svaya/JTS_with_FTS/src/install/_local_setup_util_sh.py'
+[3.127s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/svaya/JTS_with_FTS/src/install/setup.sh'
+[3.141s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/svaya/JTS_with_FTS/src/install/local_setup.bash'
+[3.143s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/svaya/JTS_with_FTS/src/install/setup.bash'
+[3.156s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/svaya/JTS_with_FTS/src/install/local_setup.zsh'
+[3.156s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/svaya/JTS_with_FTS/src/install/setup.zsh'

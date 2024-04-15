@@ -1,0 +1,7 @@
+[01m[K/home/svaya/JTS_with_FTS/src/torq_predictor/src/torq_predictor.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Ktorq_predictor/torq_predictor.h: No such file or directory
+    7 | #include [01;31m[K"torq_predictor/torq_predictor.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/torq_predictor.dir/build.make:76: CMakeFiles/torq_predictor.dir/src/torq_predictor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/torq_predictor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,32 @@
+[0.058s] Invoking command in '/home/svaya/JTS_with_FTS/src/build/torq_predictor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/svaya/ros2_control/install/rqt_controller_manager:/home/svaya/ros2_control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/svaya/JTS_with_FTS/src/build/torq_predictor -- -j10 -l10
+[0.081s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.199s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.224s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.226s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.231s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.241s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.303s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.305s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.408s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.544s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.599s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.599s] -- Configured cppcheck include dirs: /home/svaya/JTS_with_FTS/src/torq_predictor/include
+[0.599s] -- Configured cppcheck exclude dirs and/or files: 
+[0.600s] -- Added test 'lint_cmake' to check CMake code style
+[0.600s] -- Added test 'uncrustify' to check C / C++ code style
+[0.601s] -- Configured uncrustify additional arguments: 
+[0.601s] -- Added test 'xmllint' to check XML markup files
+[0.601s] -- Configuring done
+[0.608s] -- Generating done
+[0.610s] -- Build files have been written to: /home/svaya/JTS_with_FTS/src/build/torq_predictor
+[0.644s] [ 50%] [32mBuilding CXX object CMakeFiles/torq_predictor.dir/src/torq_predictor.cpp.o[0m
+[0.841s] In file included from [01m[K/home/svaya/JTS_with_FTS/src/torq_predictor/src/torq_predictor.cpp:7[m[K:
+[0.842s] [01m[K/home/svaya/JTS_with_FTS/src/torq_predictor/include/torq_predictor/torq_predictor.h:8:10:[m[K [01;31m[Kfatal error: [m[KEigen/Dense: No such file or directory
+[0.842s]     8 | #include [01;31m[K<Eigen/Dense>[m[K
+[0.842s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.842s] compilation terminated.
+[0.844s] gmake[2]: *** [CMakeFiles/torq_predictor.dir/build.make:76: CMakeFiles/torq_predictor.dir/src/torq_predictor.cpp.o] Error 1
+[0.844s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/torq_predictor.dir/all] Error 2
+[0.844s] gmake: *** [Makefile:146: all] Error 2
+[0.847s] Invoked command in '/home/svaya/JTS_with_FTS/src/build/torq_predictor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/svaya/ros2_control/install/rqt_controller_manager:/home/svaya/ros2_control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/svaya/JTS_with_FTS/src/build/torq_predictor -- -j10 -l10

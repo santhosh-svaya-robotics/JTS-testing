@@ -1,0 +1,21 @@
+/**:
+    ros__parameters:
+        gear_ratio: [101]
+        encoder_cnt: [1048576]
+        joint_rated_torque: [3.45]
+        torque_constant: [282000]
+        controller_status: 0
+        stiffness: 1250.74
+        damping_coeff: 220.65
+        strain_gauge_factor: 2.0
+        mass: 17.497
+        link_length: 0.5
+        f: 1.3699
+
+
+
+
+
+
+
+ 

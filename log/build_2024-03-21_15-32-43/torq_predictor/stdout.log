@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target torq_predictor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/torq_predictor.dir/src/torq_predictor.cpp.o[0m
+[100%] [32m[1mLinking CXX executable torq_predictor[0m
+[100%] Built target torq_predictor
+-- Install configuration: ""
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/lib/{PROJECT_NAME}/torq_predictor
+-- Set runtime path of "/home/svaya/JTS_with_FTS/src/install/torq_predictor/lib/{PROJECT_NAME}/torq_predictor" to ""
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/ament_index/resource_index/package_run_dependencies/torq_predictor
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/ament_index/resource_index/parent_prefix_path/torq_predictor
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/environment/ament_prefix_path.sh
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/environment/ament_prefix_path.dsv
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/environment/path.sh
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/environment/path.dsv
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/local_setup.bash
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/local_setup.sh
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/local_setup.zsh
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/local_setup.dsv
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/package.dsv
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/ament_index/resource_index/packages/torq_predictor
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/cmake/torq_predictorConfig.cmake
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/cmake/torq_predictorConfig-version.cmake
+-- Installing: /home/svaya/JTS_with_FTS/src/install/torq_predictor/share/torq_predictor/package.xml

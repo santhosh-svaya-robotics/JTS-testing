@@ -1,0 +1,10 @@
+<library path="svaya_hw">
+    <class name="svaya_hw/SvayaHW"
+           type="svaya_hw::SvayaHW"
+           base_class_type="hardware_interface::SystemInterface">
+        
+        <description>
+            Hardware Interface for svaya robot (ROS2)
+        </description>
+    </class>
+</library>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+	<xacro:property name="PI" value="3.1415926535897931"/>
+	<xacro:macro name="tool" params="parent robot_name">
+		<joint name="joint8" type="fixed">
+			<parent link="${parent}"/>
+			<child link="tool_link"/>
+			<axis xyz="0 0 1"/>
+			<origin xyz="0 0 0.0819" rpy="0 0 0"/>
+		</joint>
+		<link name="tool_link">
+			<visual>
+				<origin xyz="0 0 0.0" rpy="0 0 0"/>
+				<geometry>
+					<cylinder length="1e-5" radius="1e-5"/>
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0 0 5e-13" rpy="0 0 0"/>
+				<geometry>
+					<cylinder length="1e-12" radius="1e-12"/>
+				</geometry>
+			</collision>
+			<inertial>
+				<origin xyz="0 0 0.105" rpy="0 0 0"/>
+				<mass value="1.235"/>
+				<inertia ixx="0.000000" iyy="0.000000" izz="0.000000" ixy="0.000000" iyz="0.000000" ixz="0.000000"/>
+			</inertial>
+		</link>
+		<joint name="joint9" type="fixed">
+			<parent link="tool_link"/>
+			<child link="tcp_default"/>
+			<axis xyz="0 0 1"/>
+			<origin xyz="0 0 0.21" rpy="0 0 0"/>
+		</joint>
+		<link name="tcp_default">
+			<visual>
+				<origin xyz="0 0 0.0" rpy="0 0 0"/>
+				<geometry>
+					<sphere radius="1e-5"/>
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0.0" rpy="0 0 0"/>
+				<geometry>
+					<sphere radius="1e-5"/>
+				</geometry>
+			</collision>
+			<inertial>
+				<origin xyz="0 0.0 0.0" rpy="0 0 0"/>
+				<mass value="1e-5"/>
+				<inertia ixx="1e-8" iyy="1e-8" izz="1e-8" ixy="0" iyz="0" ixz="0"/>
+			</inertial>
+		</link>
+	</xacro:macro>
+</robot>
+

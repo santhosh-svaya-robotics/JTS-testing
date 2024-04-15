@@ -1,0 +1,11 @@
+svaya_parameters:
+    ros__parameters:
+        gear_ratio: [100, 100, 101, 101, 101, 101]
+        encoder_cnt: [524288, 524288, 524288, 524288, 524288, 524288]
+        joint_rated_torque: [2.46, 2.46, 2.46, 0.62, 0.62, 0.62]
+        torque_constant: [156000, 156000, 156000, 106000, 106000, 106000]
+        controller_status: 0
+
+
+
+
